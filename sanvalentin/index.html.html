@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portada San Valentín</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      overflow: hidden;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      font-family: 'Cursive', sans-serif;
+    }
+
+    h1 {
+      color: white;
+      font-size: 3em;
+      text-shadow: 2px 2px 8px #000;
+      z-index: 1;
+      position: relative;
+      animation: aparecer 4s ease-in-out forwards;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .corazon {
+      position: absolute;
+      font-size: 2em;
+      color: red;
+      animation: flotar 6s linear infinite;
+    }
+
+    @keyframes flotar {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 ¡Feliz San Valentín! 💖</h1>
+  
+
+  <script>
+    function crearCorazon() {
+      const corazon = document.createElement("div");
+      corazon.classList.add("corazon");
+      corazon.innerHTML = "❤️💖💖 "; // Puedes cambiar por 🌹 para flores
+      corazon.style.left = Math.random() * 100 + "vw";
+      corazon.style.animationDuration = (4 + Math.random() * 3) + "s";
+      document.body.appendChild(corazon);
+
+      setTimeout(() => {
+        corazon.remove();
+      }, 7000);
+    }
+
+    setInterval(crearCorazon, 600); // cada 0.6 segundos aparece uno
+  </script>
+ <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* coloca el contenido al final */
+      align-items: center;
+      background: pink;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-link {
+      margin: 20px;
+      font-size: 1.5em;
+      color: white;
+      text-decoration: none;
+      background: red;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px black;
+    }
+
+    .footer-link:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html (2).html" class="footer-link">❤️</a>
+   <meta charset="UTF-8">
+   <body>
+    
+  
+  <style>
+  
+     
+    
+
+
+
+   
+  </style>
+</head>
+<body>
+  <head>
+  <meta charset="UTF-8">
+  <title>Video de Fondo</title>
+  <style>
+    /* Contenedor del video */
+    .video-fondo {
+      position: fixed;   /* se queda fijo en la pantalla */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;       /* detrás del contenido */
+      overflow: hidden;
+    }
+
+    .video-fondo video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* ajusta el video sin deformarlo */
+    }
+
+    /* Texto o contenido encima del video */
+    .contenido {
+      position: relative;
+      z-index: 1;        /* encima del video */
+      color: white;
+      text-align: center;
+      margin-top: 20%;
+      font-size: 2em;
+      text-shadow: 2px 2px 5px black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video de fondo -->
+  <div class="video-fondo">
+    <video autoplay muted loop>
+      <source src="corazon.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+
+ 
+  </div>
+</body>
+</html>
+
+
+  
+
+</body>
+</html>
+
+
+</body>
+
+
+</body>
+</html>
+
+
+</html>
+
+
+</body>
+</html>
+
